@@ -1,0 +1,358 @@
+========== FRAMEWORK LOG START ==========
+Gender
+Male      5059
+Female    4941
+Name: count, dtype: int64
+
+
+Ethnicity
+Vietnamese    506
+Filipino      504
+Chinese       499
+Irish         495
+Kenyan        493
+African       492
+Ghanaian      490
+English       490
+Japanese      482
+Polish        477
+Caribbean     474
+French        472
+Dutch         471
+German        463
+Jamaican      462
+Korean        460
+Indian        458
+Nigerian      456
+Ethiopian     455
+Italian       455
+Thai          446
+Name: count, dtype: int64
+
+
+Intersectional_Group
+Male-Vietnamese      269
+Male-Chinese         267
+Male-Irish           265
+Male-African         262
+Male-Filipino        258
+Male-English         255
+Female-French        253
+Male-Kenyan          249
+Female-Japanese      249
+Female-Filipino      246
+Male-Ghanaian        245
+Female-Ghanaian      245
+Female-Kenyan        244
+Male-Dutch           244
+Female-Polish        241
+Male-Indian          238
+Male-Caribbean       237
+Female-Caribbean     237
+Female-Vietnamese    237
+Female-Thai          236
+Male-Polish          236
+Female-English       235
+Female-Nigerian      235
+Male-Italian         235
+Female-Korean        235
+Male-Japanese        233
+Female-Chinese       232
+Male-Jamaican        232
+Female-German        232
+Male-German          231
+Female-Jamaican      230
+Female-Irish         230
+Female-African       230
+Male-Ethiopian       228
+Female-Ethiopian     227
+Female-Dutch         227
+Male-Korean          225
+Male-Nigerian        221
+Female-Italian       220
+Female-Indian        220
+Male-French          219
+Male-Thai            210
+Name: count, dtype: int64
+
+--- MODEL A: Resume + Job Description Only ---
+              precision    recall  f1-score   support
+
+           0       0.53      0.52      0.52      1288
+           1       0.50      0.51      0.50      1212
+
+    accuracy                           0.51      2500
+   macro avg       0.51      0.51      0.51      2500
+weighted avg       0.51      0.51      0.51      2500
+
+
+Intersectional Fairness for Model A:
+                   Selection Rate  Accuracy
+Female-Italian           0.431373  0.549020
+Male-Indian              0.428571  0.442857
+Female-Ethiopian         0.527273  0.454545
+Female-Dutch             0.406250  0.562500
+Male-Japanese            0.413793  0.465517
+Male-Jamaican            0.517857  0.660714
+Male-Dutch               0.415385  0.630769
+Male-Italian             0.558824  0.602941
+Male-Vietnamese          0.421875  0.500000
+Male-French              0.437500  0.531250
+Male-Nigerian            0.555556  0.541667
+Female-Chinese           0.523077  0.507692
+Male-English             0.573770  0.655738
+Female-Caribbean         0.517857  0.392857
+Female-Polish            0.575758  0.500000
+Female-African           0.396552  0.620690
+Female-English           0.474576  0.491525
+Female-Filipino          0.516667  0.416667
+Male-Polish              0.466667  0.622222
+Male-Kenyan              0.454545  0.545455
+Female-Korean            0.500000  0.392857
+Male-Ethiopian           0.583333  0.550000
+Male-Chinese             0.406250  0.593750
+Male-Korean              0.467742  0.548387
+Female-Kenyan            0.478261  0.376812
+Male-Ghanaian            0.509434  0.509434
+Male-Irish               0.438596  0.543860
+Male-African             0.521127  0.563380
+Female-Irish             0.543478  0.478261
+Male-German              0.523810  0.571429
+Female-Ghanaian          0.510638  0.531915
+Female-Nigerian          0.560000  0.420000
+Female-Japanese          0.433333  0.416667
+Female-Vietnamese        0.524590  0.508197
+Male-Filipino            0.485714  0.514286
+Female-French            0.441176  0.514706
+Male-Thai                0.384615  0.557692
+Female-German            0.666667  0.333333
+Female-Thai              0.592593  0.370370
+Female-Jamaican          0.507937  0.507937
+Male-Caribbean           0.425532  0.531915
+Female-Indian            0.603774  0.509434
+
+--- MODEL B: Model A + Gender + Ethnicity ---
+              precision    recall  f1-score   support
+
+           0       0.65      0.64      0.65      1288
+           1       0.62      0.63      0.63      1212
+
+    accuracy                           0.64      2500
+   macro avg       0.64      0.64      0.64      2500
+weighted avg       0.64      0.64      0.64      2500
+
+
+Intersectional Fairness for Model B:
+                   Selection Rate  Accuracy
+Female-Italian           0.019608  0.607843
+Male-Indian              0.942857  0.642857
+Female-Ethiopian         0.036364  0.763636
+Female-Dutch             0.046875  0.578125
+Male-Japanese            0.931034  0.637931
+Male-Jamaican            0.946429  0.696429
+Male-Dutch               0.892308  0.615385
+Male-Italian             0.955882  0.676471
+Male-Vietnamese          0.890625  0.656250
+Male-French              0.859375  0.609375
+Male-Nigerian            0.944444  0.652778
+Female-Chinese           0.000000  0.753846
+Male-English             0.852459  0.639344
+Female-Caribbean         0.017857  0.571429
+Female-Polish            0.045455  0.666667
+Female-African           0.051724  0.793103
+Female-English           0.016949  0.711864
+Female-Filipino          0.000000  0.633333
+Male-Polish              0.955556  0.577778
+Male-Kenyan              0.863636  0.681818
+Female-Korean            0.053571  0.625000
+Male-Ethiopian           0.883333  0.616667
+Male-Chinese             0.890625  0.640625
+Male-Korean              0.870968  0.596774
+Female-Kenyan            0.028986  0.565217
+Male-Ghanaian            0.811321  0.622642
+Male-Irish               0.912281  0.701754
+Male-African             0.971831  0.704225
+Female-Irish             0.043478  0.673913
+Male-German              0.968254  0.603175
+Female-Ghanaian          0.000000  0.531915
+Female-Nigerian          0.020000  0.640000
+Female-Japanese          0.016667  0.700000
+Female-Vietnamese        0.131148  0.606557
+Male-Filipino            0.885714  0.514286
+Female-French            0.014706  0.617647
+Male-Thai                0.942308  0.615385
+Female-German            0.039216  0.647059
+Female-Thai              0.018519  0.648148
+Female-Jamaican          0.174603  0.523810
+Male-Caribbean           0.914894  0.553191
+Female-Indian            0.094340  0.603774
+
+--- MODEL C: Model A + Intersectional Reweighting ---
+              precision    recall  f1-score   support
+
+           0       0.54      0.52      0.53      1288
+           1       0.51      0.53      0.52      1212
+
+    accuracy                           0.52      2500
+   macro avg       0.52      0.52      0.52      2500
+weighted avg       0.52      0.52      0.52      2500
+
+
+Intersectional Fairness After Mitigation:
+                   Selection Rate  Accuracy
+Female-Italian           0.313725  0.549020
+Male-Indian              0.628571  0.500000
+Female-Ethiopian         0.563636  0.418182
+Female-Dutch             0.218750  0.562500
+Male-Japanese            0.431034  0.482759
+Male-Jamaican            0.571429  0.642857
+Male-Dutch               0.569231  0.569231
+Male-Italian             0.602941  0.558824
+Male-Vietnamese          0.531250  0.578125
+Male-French              0.640625  0.546875
+Male-Nigerian            0.583333  0.597222
+Female-Chinese           0.569231  0.523077
+Male-English             0.639344  0.688525
+Female-Caribbean         0.464286  0.410714
+Female-Polish            0.606061  0.469697
+Female-African           0.431034  0.620690
+Female-English           0.491525  0.508475
+Female-Filipino          0.450000  0.483333
+Male-Polish              0.511111  0.666667
+Male-Kenyan              0.409091  0.530303
+Female-Korean            0.517857  0.446429
+Male-Ethiopian           0.666667  0.533333
+Male-Chinese             0.390625  0.609375
+Male-Korean              0.596774  0.612903
+Female-Kenyan            0.391304  0.376812
+Male-Ghanaian            0.509434  0.471698
+Male-Irish               0.421053  0.526316
+Male-African             0.577465  0.535211
+Female-Irish             0.478261  0.543478
+Male-German              0.555556  0.539683
+Female-Ghanaian          0.276596  0.510638
+Female-Nigerian          0.440000  0.420000
+Female-Japanese          0.416667  0.466667
+Female-Vietnamese        0.491803  0.508197
+Male-Filipino            0.657143  0.514286
+Female-French            0.294118  0.602941
+Male-Thai                0.480769  0.538462
+Female-German            0.607843  0.392157
+Female-Thai              0.574074  0.462963
+Female-Jamaican          0.396825  0.428571
+Male-Caribbean           0.553191  0.446809
+Female-Indian            0.547170  0.528302
+
+--- MODEL C (Gender-only Reweighting) ---
+              precision    recall  f1-score   support
+
+           0       0.54      0.51      0.53      1288
+           1       0.51      0.54      0.53      1212
+
+    accuracy                           0.53      2500
+   macro avg       0.53      0.53      0.53      2500
+weighted avg       0.53      0.53      0.53      2500
+
+                   Selection Rate  Accuracy
+Female-Italian           0.215686  0.607843
+Male-Indian              0.828571  0.614286
+Female-Ethiopian         0.454545  0.490909
+Female-Dutch             0.218750  0.562500
+Male-Japanese            0.431034  0.482759
+Male-Jamaican            0.714286  0.678571
+Male-Dutch               0.569231  0.569231
+Male-Italian             0.720588  0.647059
+Male-Vietnamese          0.578125  0.531250
+Male-French              0.609375  0.546875
+Male-Nigerian            0.611111  0.597222
+Female-Chinese           0.400000  0.569231
+Male-English             0.377049  0.590164
+Female-Caribbean         0.625000  0.428571
+Female-Polish            0.681818  0.424242
+Female-African           0.275862  0.637931
+Female-English           0.440678  0.559322
+Female-Filipino          0.433333  0.466667
+Male-Polish              0.600000  0.666667
+Male-Kenyan              0.196970  0.439394
+Female-Korean            0.553571  0.446429
+Male-Ethiopian           0.666667  0.533333
+Male-Chinese             0.328125  0.546875
+Male-Korean              0.677419  0.596774
+Female-Kenyan            0.594203  0.376812
+Male-Ghanaian            0.471698  0.471698
+Male-Irish               0.421053  0.526316
+Male-African             0.732394  0.577465
+Female-Irish             0.586957  0.434783
+Male-German              0.571429  0.555556
+Female-Ghanaian          0.191489  0.468085
+Female-Nigerian          0.540000  0.440000
+Female-Japanese          0.333333  0.450000
+Female-Vietnamese        0.655738  0.573770
+Male-Filipino            0.557143  0.528571
+Female-French            0.191176  0.588235
+Male-Thai                0.538462  0.519231
+Female-German            0.568627  0.392157
+Female-Thai              0.592593  0.481481
+Female-Jamaican          0.619048  0.460317
+Male-Caribbean           0.510638  0.489362
+Female-Indian            0.528302  0.509434
+
+--- MODEL C (Ethnicity-only Reweighting) ---
+              precision    recall  f1-score   support
+
+           0       0.64      0.64      0.64      1288
+           1       0.62      0.62      0.62      1212
+
+    accuracy                           0.63      2500
+   macro avg       0.63      0.63      0.63      2500
+weighted avg       0.63      0.63      0.63      2500
+
+                   Selection Rate  Accuracy
+Female-Italian           0.000000  0.588235
+Male-Indian              0.957143  0.657143
+Female-Ethiopian         0.054545  0.745455
+Female-Dutch             0.000000  0.531250
+Male-Japanese            0.931034  0.637931
+Male-Jamaican            0.946429  0.696429
+Male-Dutch               0.923077  0.584615
+Male-Italian             0.955882  0.676471
+Male-Vietnamese          0.843750  0.671875
+Male-French              0.921875  0.578125
+Male-Nigerian            0.902778  0.666667
+Female-Chinese           0.030769  0.753846
+Male-English             0.836066  0.622951
+Female-Caribbean         0.089286  0.571429
+Female-Polish            0.030303  0.651515
+Female-African           0.017241  0.758621
+Female-English           0.135593  0.694915
+Female-Filipino          0.016667  0.650000
+Male-Polish              0.955556  0.577778
+Male-Kenyan              0.712121  0.651515
+Female-Korean            0.017857  0.660714
+Male-Ethiopian           0.900000  0.633333
+Male-Chinese             0.921875  0.671875
+Male-Korean              0.870968  0.596774
+Female-Kenyan            0.202899  0.507246
+Male-Ghanaian            0.849057  0.660377
+Male-Irish               0.877193  0.666667
+Male-African             0.971831  0.704225
+Female-Irish             0.065217  0.695652
+Male-German              0.968254  0.603175
+Female-Ghanaian          0.000000  0.531915
+Female-Nigerian          0.040000  0.620000
+Female-Japanese          0.016667  0.700000
+Female-Vietnamese        0.114754  0.590164
+Male-Filipino            0.885714  0.514286
+Female-French            0.014706  0.617647
+Male-Thai                0.903846  0.615385
+Female-German            0.078431  0.607843
+Female-Thai              0.018519  0.648148
+Female-Jamaican          0.111111  0.555556
+Male-Caribbean           0.872340  0.553191
+Female-Indian            0.000000  0.584906
+
+Average Fairness Summary Across Models:
+     Model  Avg Selection Rate  Avg Accuracy  Statistical Disparity
+0  Model A            0.493389      0.512839               0.010580
+1  Model B            0.475148      0.636143               0.017814
+2  Model C            0.501605      0.521960               0.012879
