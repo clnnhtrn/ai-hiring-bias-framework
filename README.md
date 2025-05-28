@@ -23,14 +23,14 @@ It applies:
 
 ---
 
-## Requirements
+## ⚙️ Requirements
 
 - Python 3.8 or higher
 - All required libraries are listed in `requirements.txt`
 
 ---
 
-## Setup Instructions
+## 🚀 Setup Instructions
 
 ### Step 1: Clone the Repository
 
@@ -66,7 +66,7 @@ This installs the following Python packages:
 
 ---
 
-## Prepare Your Dataset
+## 🗂️ Prepare Your Dataset
 
 The dataset used in this framework is the Recruitment Dataset available on Kaggle (https://www.kaggle.com/datasets/surendra365/recruitement-dataset/data)
 
@@ -87,7 +87,7 @@ It must be placed in the **root directory** of the project (same folder as the P
 
 ---
 
-## Run the Framework
+## ▶️ Run the Framework
 
 In the terminal, from the root project folder:
 
@@ -97,7 +97,7 @@ python main.py
 
 ---
 
-## Output Files
+## 📤 Output Files
 
 After running the framework, the following files will be generated automatically:
 
@@ -109,7 +109,7 @@ After running the framework, the following files will be generated automatically
 
 ---
 
-## Project Structure
+## 🧾 Project Structure
 
 ```
 📁 ai-hiring-bias-framework/
@@ -124,15 +124,15 @@ After running the framework, the following files will be generated automatically
 
 ---
 
-## License
+## 🪪 License
 
-This project is licensed under the **MIT License**.
-
+This project is licensed under the [MIT License](LICENSE).  
 You are free to use, modify, and share it — with proper attribution.
+
 
 ---
 
-## Need Help?
+## 🙋 Need Help?
 
 If you have any issues setting up or running the code, feel free to:
 
