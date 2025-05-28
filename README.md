@@ -69,6 +69,7 @@ This installs the following Python packages:
 ## Prepare Your Dataset
 
 The dataset used in this framework is the Recruitment Dataset available on Kaggle (https://www.kaggle.com/datasets/surendra365/recruitement-dataset/data)
+
 If you are using your own dataset, your dataset file must be named:
 
 ```
@@ -102,7 +103,7 @@ After running the framework, the following files will be generated automatically
 
 | File | Description |
 |------|-------------|
-| `final_preprocessed_dataset.csv` | Fully processed dataset containing original data, TF-IDF features, and one-hot encoded intersectional groups |
+| `processed_dataset.csv` | Fully processed dataset containing original data, TF-IDF features, and one-hot encoded intersectional groups |
 | `framework_output_log.txt` | Text log with model metrics, fairness evaluation results, and comparison summaries |
 | Matplotlib plots (displayed) | Visual comparisons for selection rate, accuracy, and disparity across groups and models |
 
@@ -112,7 +113,7 @@ After running the framework, the following files will be generated automatically
 
 ```
 📁 ai-hiring-bias-framework/
-├── job_applicant_dataset.csv         # <-- You provide this dataset
+├── job_applicant_dataset.csv         # <-- Kaggle dataset
 ├── main.py                           # Main Python script 
 ├── requirements.txt                 # Python dependencies
 ├── README.md                        # Full usage guide (this file)
