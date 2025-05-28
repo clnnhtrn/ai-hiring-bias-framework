@@ -1,0 +1,74 @@
+absl-py==2.2.1
+aif360 @ file:///home/conda/feedstock_root/build_artifacts/aif360_1736083927351/work
+astunparse==1.6.3
+Bottleneck @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_55txi4fy1u/croot/bottleneck_1731058642212/work
+certifi==2025.1.31
+charset-normalizer==3.4.1
+contourpy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_f3ncrd21fo/croot/contourpy_1738161171293/work
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1733332471406/work
+fairlearn==0.12.0
+filelock==3.18.0
+flatbuffers==25.2.10
+fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_1738940287426/work
+fsspec==2025.3.2
+gast==0.6.0
+google-pasta==0.2.0
+grpcio==1.71.0
+h5py==3.13.0
+idna==3.10
+importlib_metadata==8.6.1
+importlib_resources @ file:///home/conda/feedstock_root/build_artifacts/importlib_resources_1736252299705/work
+inFairness==0.2.3
+Jinja2==3.1.6
+joblib @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_8ff7uji0v2/croot/joblib_1718217225309/work
+keras==3.9.1
+kiwisolver @ file:///Users/runner/miniforge3/conda-bld/kiwisolver_1630173773931/work
+libclang==18.1.1
+Markdown==3.7
+markdown-it-py==3.0.0
+MarkupSafe==3.0.2
+matplotlib==3.9.2
+mdurl==0.1.2
+ml_dtypes==0.5.1
+mpmath==1.3.0
+munkres==1.1.4
+namex==0.0.8
+networkx==3.2.1
+numexpr @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_b3kvvt6tc6/croot/numexpr_1730215947700/work
+numpy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_dd0k53r0lc/croot/numpy_and_numpy_base_1736283265725/work/dist/numpy-2.0.2-cp39-cp39-macosx_11_0_arm64.whl#sha256=c7c39ec3768ed6e8a3baf3e0c16cfa5834113a824fc7d7fe7e322da450264b3a
+olefile @ file:///home/conda/feedstock_root/build_artifacts/olefile_1734769783178/work
+opt_einsum==3.4.0
+optree==0.14.1
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1733203243479/work
+pandas @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_4aifrweohv/croot/pandas_1732735109535/work/dist/pandas-2.2.3-cp39-cp39-macosx_11_0_arm64.whl#sha256=25b432d8b6b67061b3242c9572f7a6ac74563a28e9b090025e6871d777a433c2
+Pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1630696664467/work
+POT==0.9.5
+protobuf==5.29.4
+Pygments==2.19.1
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1735698276679/work
+python-dateutil @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_66ud1l42_h/croot/python-dateutil_1716495741162/work
+pytz @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_a4b76c83ik/croot/pytz_1713974318928/work
+requests==2.32.3
+rich==13.9.4
+scikit-learn @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_2coq3750ge/croot/scikit-learn_1737988773864/work
+scipy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_baum73h1re/croot/scipy_1733756482902/work/dist/scipy-1.13.1-cp39-cp39-macosx_11_0_arm64.whl#sha256=0248fb57576996ce5e08c81ede258700aa6fbf2aba47e21fa6c0a25ce7501638
+seaborn==0.13.2
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+skorch==1.1.0
+sympy==1.13.1
+tabulate==0.9.0
+tensorboard==2.19.0
+tensorboard-data-server==0.7.2
+tensorflow==2.19.0
+tensorflow-io-gcs-filesystem==0.37.1
+termcolor==2.5.0
+threadpoolctl @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_efa5bvb6vi/croot/threadpoolctl_1719407806403/work
+torch==2.6.0
+tqdm==4.67.1
+typing_extensions==4.13.0
+tzdata @ file:///croot/python-tzdata_1690578112552/work
+unicodedata2 @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_b99hn8t9lq/croot/unicodedata2_1736541774279/work
+urllib3==2.3.0
+Werkzeug==3.1.3
+wrapt==1.17.2
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1732827521216/work
