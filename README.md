@@ -82,7 +82,7 @@ It must be placed in the **root directory** of the project (same folder as the P
 - `Resume` – text field
 - `Job Description` – text field
 - `Gender` – e.g., Male, Female
-- `Ethnicity` – e.g., Asian, White, Black
+- `Ethnicity` – e.g., Italian, African, Chinese
 - `Best Match` – binary label (1 = selected, 0 = not selected)
 
 ---

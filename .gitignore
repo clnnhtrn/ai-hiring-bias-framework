@@ -23,3 +23,11 @@ final_preprocessed_dataset.csv
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+# Ignore Python bytecode cache
+__pycache__/
+
+# Ignore virtual environments
+venv/
+myenv/
+env/
